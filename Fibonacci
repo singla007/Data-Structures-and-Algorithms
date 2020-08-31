@@ -1,0 +1,20 @@
+
+def fibonaci(n,arr):      
+    print("f(",n,")")
+    if arr[n-1]!=(-1):
+        return arr[n-1]  
+    if n==0:  
+        print(0)      
+        return 0
+    if n==1:      
+        return 1  
+    x =fibonaci(n-1,arr) + fibonaci(n-2,arr)  
+    arr[n-1] = x
+    print(x)
+    return x
+  
+n = 100    
+arr = [-1]*n
+print(fibonaci(n,arr))
+
+
