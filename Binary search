@@ -6,7 +6,7 @@ def fun(arr,start,end,x):
         return -1
     
     if x == arr[mid]:
-        return midsdff
+        return mid
     
     if x < arr[mid]:
         return fun(arr,start,mid-1,x) 
